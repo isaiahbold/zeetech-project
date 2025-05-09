@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        form {
+          max-width: 600px;
+          margin: 20px auto;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          font-family: Arial, sans-serif;
+          background-color: #f9f9f9;
+        }
+        
+        h5 {
+          margin-top: 20px;
+          margin-bottom: 10px;
+          font-weight: bold;
+          color: #333;
+        }
+        
+        label {
+          display: block;
+          margin-top: 10px;
+          font-weight: normal;
+          color: #555;
+        }
+        
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="date"] {
+          width: 100%;
+          padding: 8px 10px;
+          margin-top: 5px;
+          margin-bottom: 10px;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          box-sizing: border-box;
+        }
+        
+        input[type="checkbox"] {
+          margin-top: 10px;
+          margin-right: 5px;
+        }
+        
+        .inline-label {
+          display: inline-block;
+          margin-right: 15px;
+          font-weight: normal;
+        }
+        
+        p {
+          margin-top: 10px;
+          font-size: 0.9em;
+          color: #666;
+          line-height: 1.5;
+        }
+        
+        .declaration {
+          margin-top: 20px;
+          padding: 15px;
+          border: 1px solid #eee;
+          border-radius: 5px;
+          background-color: #f4f4f4;
+        }
+        
+        .declaration p {
+          margin-bottom: 10px;
+        }
+        
+        .submit-button {
+          margin-top: 20px;
+          text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        </style>
+        
+        <form method="get" action="">
+            <h1>ZEETECH COMPUTER AND GREEN <span>ENERGY</span> </h1>
+            <h3 style="text-align: center;">STUDENTSHIP FORM</h3>
+          <h5>PERSONAL PROFILE(A)</h5>
+          <label for="surname">SURNAME</label>
+          <input type="text" id="surname" name="surname">
+          <label for="firstname">FIRST NAME</label>
+          <input type="text" id="firstname" name="firstname">
+          <label for="othernames">OTHER NAMES</label>
+          <input type="text" id="othernames" name="othernames">
+        
+          <h5>COURSE OF STUDY</h5>
+          <label class="inline-label">DESKTOP PUBLISHING</label>
+          <input type="checkbox" name="course" value="desktop">
+          <label class="inline-label">GRAPHIC DESIGN</label>
+          <input type="checkbox" name="course" value="graphic">
+          <label class="inline-label">COMPUTER ENGINEERING</label>
+          <input type="checkbox" name="course" value="computer">
+          <label class="inline-label">WEB DEVELOPMENT</label>
+          <input type="checkbox" name="course" value="web">
+        
+          <h5>PERIOD OF TRAINING</h5>
+          <label class="inline-label">MORNING 8:00AM-11:00AM</label>
+          <input type="checkbox" name="period" value="morning">
+          <label class="inline-label">AFTERNOON 12:30PM-3:00PM</label>
+          <input type="checkbox" name="period" value="afternoon">
+          <label class="inline-label">EVENING 4:00PM-6:00PM</label>
+          <input type="checkbox" name="period" value="evening">
+          <p>Friday; 3-6pm, Saturday; 8-11am</p>
+        
+          <h5>PERSONAL PROFILE(B)</h5>
+          <label for="contactaddress">CONTACT ADDRESS (PRESENT)</label>
+          <input type="text" id="contactaddress" name="contactaddress">
+          <label for="studentphone">STUDENT PHONE NUMBER</label>
+          <input type="tel" id="studentphone" name="studentphone">
+          <label for="email">E-MAIL</label>
+          <input type="email" id="email" name="email">
+          <label for="gender">GENDER</label>
+          <input type="text" id="gender" name="gender">
+          <label for="nationality">NATIONALITY</label>
+          <input type="text" id="nationality" name="nationality">
+          <label for="localgov">LOCAL GOVERNMENT OF ORIGIN</label>
+          <input type="text" id="localgov" name="localgov">
+          <label for="state">STATE OF ORIGIN</label>
+          <input type="text" id="state" name="state">
+          <label for="maritalstatus">MARITAL STATUS</label>
+          <input type="text" id="maritalstatus" name="maritalstatus">
+          <label for="dateofbirth">DATE OF BIRTH</label>
+          <input type="date" id="dateofbirth" name="dateofbirth">
+          <label for="parentphone">PARENT AND GUARDIAN PHONE NUMBER</label>
+          <input type="tel" id="parentphone" name="parentphone">
+          <label for="religion">RELIGION</label>
+          <input type="text" id="religion" name="religion">
+          <label for="education">EDUCATIONAL QUALIFICATION</label>
+          <input type="text" id="education" name="education">
+          <label for="sickness">HAVE YOU HAD ANY SICKNESS? (if yes describe)</label>
+          <input type="text" id="sickness" name="sickness">
+        
+          <label>PLEASE HOW DID YOU GET TO KNOW ABOUT THIS INSTITUTION? (tick a box)</label>
+          <label class="inline-label">an ex Zeetechite</label>
+          <input type="checkbox" name="source" value="ex-student">
+          <label class="inline-label">bulk sms</label>
+          <input type="checkbox" name="source" value="sms">
+          <label class="inline-label">banner</label>
+          <input type="checkbox" name="source" value="banner">
+          <label class="inline-label">flier/handbill</label>
+          <input type="checkbox" name="source" value="flier">
+          <label class="inline-label">social media</label>
+          <input type="checkbox" name="source" value="social">
+          <label class="inline-label">others</label>
+          <input type="text" placeholder="specify" name="source_other">
+        
+          <h5 class="declaration">DECLARATION</h5>
+          <p>-zero tolerant to observation</p>
+          <p>-lateness to class is not pardonable</p>
+          <p>-fighting or stealing will lead to dismissal</p>
+          <label for="declaration_name">I</label>
+          <input type="text" id="declaration_name" name="declaration_name">
+          <label for="declaration_text">declare that all information provided above is true and correct. I pledge to abide by the rules and regulations of this institution.</label>
+          <div class="submit-button">
+            <button class="btn btn-success" type="submit">Submit</button>
+          </div>
+        </form>
+        
+
+
+
+        
+
+    </form>
+    
+</body>
+</html>
